@@ -1,0 +1,341 @@
+:root {
+    --themecolor: #be1e2d;
+}
+
+body {
+    font-family: 'montserrat';
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bg_theme {
+    background-color: var(--themecolor);
+}
+
+.text_theme {
+    color: var(--themecolor);
+}
+
+.logo {
+    width: 100px;
+}
+
+.section_title {
+    font-size: 25px;
+    font-weight: 750;
+    color: var(--themecolor);
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.hero_title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--themecolor);
+    text-align: center;
+}
+
+#scrolled_header,
+#scrolled_navbar {
+    transition: 1s;
+}
+
+.dropdown-item:active {
+    background-color: var(--themecolor) !important;
+}
+
+.container .row .img {
+    width: 50px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.a_resset {
+    text-decoration: none;
+}
+
+.img_hover:hover {
+    transition: .5s;
+    transform: scale(1.03);
+    z-index: 1;
+}
+
+.a_hover:hover {
+    color: var(--themecolor);
+}
+
+
+/* hover komisaris */
+/* sihol */
+.x {
+    overflow: hidden;
+}
+
+.intro {
+    height: 85px;
+    width: 336px;
+    bottom: 93px;
+    position: absolute;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: .5s;
+}
+
+.intro h3 {
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.intro p {
+    font-size: 15px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
+
+/* prof nurul */
+.z {
+    overflow: hidden;
+}
+
+.intro1 {
+    height: 110px;
+    width: 336px;
+    bottom: -347px;
+    position: absolute;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: .5s;
+}
+
+.intro1 h3 {
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.intro1 p {
+    font-size: 15px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
+/* radyum ikono */
+.r {
+    overflow: hidden;
+}
+
+.intro2 {
+    height: 110px;
+    width: 336px;
+    bottom: -787px;
+    position: absolute;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: .5s;
+}
+
+.intro2 h3 {
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.intro2 p {
+    font-size: 15px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
+
+/* akhir hover komisaris */
+
+/* fasilitas */
+.images .imgBX {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.images .imgBX img {
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.images .imgBX:hover img {
+    transform: scale(1.1);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(27, 27, 27, .8);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    display: none;
+}
+
+.popup span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 2000;
+    transition: 0.5s;
+}
+
+.popup span:hover {
+    transform: rotate(180deg);
+}
+
+.popup img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid white;
+    width: 80%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.popup .par {
+    position: absolute;
+    text-align: left;
+    top: 45%;
+    left: 10%;
+    color: white;
+    padding-right: 10%;
+}
+
+.popup .par p {
+    font-size: 14px;
+}
+
+/* akhir fasilitas */
+
+
+@media (min-width:992px) {
+    .logo {
+        width: 150px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .section_title {
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    /* hover komisaris */
+    .intro {
+        height: 85px;
+        width: 416px;
+        bottom: 110px;
+    }
+
+    .intro p {
+        margin: 15px;
+    }
+
+    .x:hover .intro {
+        height: 170px;
+        color: white;
+        backdrop-filter: blur(5px);
+    }
+
+    .x:hover p {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .x:hover {
+        cursor: pointer;
+    }
+
+    .intro1 {
+        height: 85px;
+        width: 416px;
+        bottom: 113px;
+    }
+
+    .z:hover .intro1 {
+        height: 169px;
+        color: white;
+        backdrop-filter: blur(5px);
+    }
+
+    .z:hover p {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .z:hover {
+        cursor: pointer;
+    }
+
+    .intro2 {
+        height: 85px;
+        width: 416px;
+        bottom: 113px;
+    }
+
+    .r:hover .intro2 {
+        height: 169px;
+        color: white;
+        backdrop-filter: blur(5px);
+    }
+
+    .r:hover p {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .r:hover {
+        cursor: pointer;
+    }
+
+    /* akhir hover komisaris */
+
+    /* fasilitas */
+    .popup img {
+        top: 50%;
+        left: 30%;
+        width: 40%;
+    }
+
+    .popup .par {
+        position: absolute;
+        top: 30%;
+        left: 55%;
+        color: white;
+        padding-right: 10%;
+    }
+
+    .popup .par p {
+        font-size: 15px;
+    }
+}
